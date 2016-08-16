@@ -1,0 +1,35 @@
+Recursividad - CASO BASE - CASO RECURSIVO
+
+let fact x = x * fact(x-1)
+
+let fact x = if x == 0
+then 1
+else x * fact (x-1)
+
+-----------------------
+
+Pattern Matching
+
+fact 1=1
+fact x = x * fact(x-1)
+
+----------
+
+Para salir de Prelude
+:q
+
+Para cargar un archivo
+:l name.hs
+
+--------
+Ejemplo de lista con valores separados
+
+let bigger (first : second : tail) = tail;
+
+test:  bigger[1,2,3,4]
+
+//////////////////7
+Tuplas -> pueden ser de direferentes tipos de datos, pero tienen que tener el mismo tamaño 
+para compararla con otra Tupla.
+
+TAREA: Funcion que recibe una lista de lista y regresa una tupla con (max, min) de cada lista
