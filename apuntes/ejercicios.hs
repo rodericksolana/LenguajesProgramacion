@@ -28,5 +28,3 @@ max list = max (tail list) (head list)
 
 --Recibe una lista y regresa un Tupla que contiene el valor min y el valor max (min max)
 -- No es valido  maxmin lista = (min lista max lista)
-
-maxmin 
