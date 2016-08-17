@@ -1,9 +1,3 @@
---Función factorial
-fact 0=1
-fact 1=1
-fact x = x * fact(x-1)
-
-
 --Funcion con Pattern Matching
 maximo [] = -1
 maximo (x : []) = x
@@ -35,4 +29,5 @@ minmax lista = (minimo lista , maximo lista)
 
 
 --TAREA Recibir una lista de listas para regresar el mayor y menor de cada una...
-tarea lista =  (map minmax lista)
+tarea lista =  map minmax lista
+
