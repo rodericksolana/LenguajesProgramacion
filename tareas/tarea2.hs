@@ -8,4 +8,12 @@ newton x n total = (if n <= 1 then total2
 
 
 
---
+--quickSort
+-- Para correrlo hay que pasar una lista cualquiera de la siguiente manera
+-- quickSort []   |  quickSort[6]   | quickSort[6,8,3,1,9]
+
+quickSort [] = []
+quickSort (h:t) = let left = [x | x <- t, x < h]
+                      right = [x | x <- t, x >= h]
+                  in
+                    quickSort left ++ [h] ++ quickSort right
