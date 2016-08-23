@@ -35,4 +35,4 @@ minmax lista = (minimo lista , maximo lista)
 
 
 --TAREA Recibir una lista de listas para regresar el mayor y menor de cada una...
-tarea lista =  (map minmax lista)
+tarea lista =  map minmax lista
