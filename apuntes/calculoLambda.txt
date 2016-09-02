@@ -1,0 +1,68 @@
+Cálculo Lambda
+
+Variables - aplicación - abstracción
+
+BNF
+<expresion> ::= <variable>
+
+	     |  (<expresion> <expresion>)   /*Combinación o aplicación*/
+	     |  (/ <variable> . <expresion>)   /*abstracción - definición funciones*/
+	     |   <constante>
+
+Ejemplo de definición de una función 
+(/x. x) 5
+La X se sustituye por lo de afuera 
+ 5
+
+
+
+Ejemplos:
+
+a) ((/x .(x y)) N)
+	(N= y)
+
+b) ((/y .x) N)
+   =   x
+
+c)  (/x. (/y. y x) z) v
+   =  (/y . y z) v
+   =  VZ
+
+d) ((/x. x x y)  (/x. x x x y))  /*Es infinito*/
+
+
+
+e)  (/u . vuu) y
+	= V yy
+
+f)  (/x . x y) u v  --- es lo mismo que -->  (((/x . x y) u) v)
+  =  u y v
+
+g) (/x. /y.  y  x)  u v
+    =   VU
+
+
+h)  (/ x.  x  (x ( y ( z  x))))  (/u. u V)
+
+	= (/u. uV) ((/u. uV) (y (z (/u. uV))))
+
+
+
+
+ALPHA REDUCTION
+i) (/x. /y. x y y)  (/q. q y x)    se cambia  [y-> a] y queda --- (/x. /a. x a a)  (/q. q y x)
+
+	= /a (/q. q y x) a a
+	= /a. (a y x) a
+	= a y x
+
+j)  (/ xyz. x z (y z)) (/x. x) (/xy. x)
+
+	= (/ yz. (/x. x)z (y z)) (/xy. x)
+	= (/z. (/x. x)z  ((/xy. x)z))
+	= (/z. z (/y. z))  /*Hasta aquí llega porque es una sola expresión*/
+
+
+
+
+
