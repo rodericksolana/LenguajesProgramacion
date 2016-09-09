@@ -65,4 +65,10 @@ j)  (/ xyz. x z (y z)) (/x. x) (/xy. x)
 
 
 
+Programación en HASKELL
+
+1. (\x -> x) 5
+
+
+
 
