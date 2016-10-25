@@ -1,0 +1,18 @@
+palabra(astante,a,s,t,a,n,t,e,_).
+palabra(astoria,a,s,t,o,r,i,a,_).
+palabra(baratto,b,a,r,a,t,t,o,_).
+palabra(cobalto,c,o,b,a,l,t,o,_).
+palabra(pistola,p,i,s,t,o,l,a,_).
+palabra(statale,s,t,a,t,a,l,e,_).
+
+
+crucigrama(H1,H2,H3,V1,V2,V3,_):-
+	    palabra(H1,_,V12,_,V22,_,V32,_).
+            palabra(H2,_,V14,_,V24,_,V34,_).
+            palabra(H3,_,V16,_,V26,_,V36,_).
+	    palabra(V1,_,H12,_,H22,_,H32,_).
+	    palabra(V2,_,H14,_,H24,_,H34,_).
+            palabra(V3,_,H16,_,H26,_,H36,_).
+
+
+

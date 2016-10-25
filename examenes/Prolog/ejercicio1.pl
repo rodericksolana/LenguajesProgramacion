@@ -1,0 +1,9 @@
+ingles(this, este).
+ingles(is, es).
+ingles(an, un).
+ingles(example, ejemplo).
+ingles(my, mi).
+ingles(program, programa).
+español(de, of).
+español(como, how).
+español(funciona, works).
