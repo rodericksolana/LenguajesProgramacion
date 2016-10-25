@@ -13,5 +13,5 @@ espaniol(como,how).
 espaniol(funciona,works).
 
 traduce([],E,I).
-traduce([H|T],E,I) :- (ingles(H,X),traduce(T,E,[X|I]),!;espaniol(H,Y),traduce(T,[Y|E],I),!),imprime(E,I).
+traduce([H|T],E,I) :- (ingles(H,X),traduce(T,E,[X|I]),!;espa(H,Y),traduce(T,[Y|E],I),!),imprime(E,I).
 imprime(E,I):- write([traduccion,ingles,I]),nl,write([traduccion,espaniol,E]),nl.
