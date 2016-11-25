@@ -7,7 +7,7 @@ en otro caso, deben de cambiar de posición hasta llegar a la Raiz.
 Ejemplo de ejecución de árbol explicado en el salón:
 
 
-   	   16
+   	  16
         /  \
        /    \
       /      \
