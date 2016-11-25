@@ -1,23 +1,22 @@
 Examen Final Lenguajes...
 
 Realizar un programa que permita insertar en un arbol de izq a derecha, nodos los cuales deben ser siempre menores a sus padres,
-en otro caso, deben de cambiar de posición hasta llegar a la Raiz.
+en otro caso, deben de cambiar de posiciÃ³n hasta llegar a la Raiz.
 
 
-Ejemplo de ejecución de árbol explicado en el salón:
+Ejemplo de ejecuciÃ³n de Ã¡rbol explicado en el salÃ³n:
 
-=======     tree(6, tree(3, empty, empty), tree(9, tree(7, empty, empty), tree(11, empty, empty)))	=======
 
-   	 16
+   	   16
         /  \
        /    \
       /      \
      10       11
     /  \      / \
-   5  	7    4   6
+   5    7    4   6
  
 
-*Para generar el árbol se debe ejecutar:
+*Para generar el Ã¡rbol se debe ejecutar:
 - Funciona Bien
   arbol([10,16,11,5], empty, R).
 R = tree(16, tree(10, tree(5, empty, empty), empty), tree(11, empty, empty)
